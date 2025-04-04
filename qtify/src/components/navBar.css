@@ -1,0 +1,19 @@
+.navbar{
+    background-color: #34C94B;
+    width: 1370px;
+    height: 74px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#button{
+    background-color:#121212;
+    color: #34C94B;
+    
+}
+#button:hover{
+    background-color:#1F1F21;
+}
+img{
+    background-image: url();
+}

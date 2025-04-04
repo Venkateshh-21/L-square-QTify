@@ -1,0 +1,13 @@
+.Searchbar{
+    background-color: white;
+    width:600px;
+    
+    font-family: 'Popins',sans-serif;
+    padding: 20 10;
+    border-radius: 5%;
+    border-color: black;
+}
+.search{
+    width: 50px;
+    height: 56px;
+}
