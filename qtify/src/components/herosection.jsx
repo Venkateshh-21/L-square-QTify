@@ -7,7 +7,7 @@ function Herosection() {
   return (
     <div className="hero">
         <div className="content">
-            <h1>1000 Songs,Add-free </h1>
+            <h1>100 Thousand Songs, ad-free</h1>
             <h1>Over Thousand Podcast Episodes</h1>
         </div>
         <img src={image} alt="headphones" className="image" />
