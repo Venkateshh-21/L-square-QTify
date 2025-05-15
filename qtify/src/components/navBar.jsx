@@ -9,7 +9,7 @@ function navBar() {
     <nav className="navbar">
         <img src={logo} />
         <Searchbar />
-        <Button variant="contained" id='button'>Give Feedback</Button>
+        <Button  id='button'>Give Feedback</Button>
     </nav>
   )
 }

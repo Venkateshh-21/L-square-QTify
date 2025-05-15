@@ -3,10 +3,11 @@
     width: 1370px;
     height: 74px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 #button{
+    font-family: "Poppins";
     background-color:#121212;
     color: #34C94B;
     
