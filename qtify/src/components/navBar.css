@@ -1,6 +1,6 @@
 .navbar{
     background-color: #34C94B;
-    width: 1370px;
+    width: 100vw;
     height: 74px;
     display: flex;
     justify-content: space-around;
