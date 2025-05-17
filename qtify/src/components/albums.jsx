@@ -24,7 +24,7 @@ export default function Albums() {
   return (
     <div className="topAlbums">
     
-      <div  className="albums"style={{ paddingLeft: "10px", paddingBottom: "50px" }}>
+      <div  className="albums"style={{ paddingLeft: "50px", paddingRight: "50px",paddingBottom:"50px" }}>
         <Typography variant="h5" component="h4" className="heading">
           Top Albums
         </Typography>
@@ -34,15 +34,15 @@ export default function Albums() {
       <Grid className="grid"
         style={{ paddingLeft: "50px" }}
         container
-        rowSpacing={7}
-        columnSpacing={{ xs: 1, sm: 2, md: 5, lg: 4,xl:10 }}
+        rowSpacing={4}
+        columnSpacing={{ xs: 1, sm: 2, md: 5, lg: 7,xl:12 }}
       >
         {TopAlbums.map((a) => {
           return (
             <>
               <Grid className="gridItem">
                 <Stack direction={"column"} key={a.id}>
-                  <Card sx={{ maxWidth: 159, maxHeight: 232 }}>
+                  <Card sx={{ maxWidth: 200, maxHeight: 232 }}>
                     <CardMedia
                       className="image"
                       sx={{ height: 140 }}
@@ -62,7 +62,7 @@ export default function Albums() {
                 <Typography
                   variant="p"
                   component="h3"
-                  style={{ width: "159px" }}
+                  style={{ width: "159px",paddingTop:"20px"}}
                 >
                   {a.title}
                 </Typography>
