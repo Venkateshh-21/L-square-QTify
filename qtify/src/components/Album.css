@@ -1,0 +1,43 @@
+.topAlbums{
+    /* width: 100vw; */
+    background-color: #121212;
+    color: #FFFFFF;
+}
+.albums{
+  
+    display: flex;
+    justify-content: space-between;
+}
+#collapse{
+   font-family: "Poppins";
+    color: #34C94B;
+    
+}
+
+
+.heading{
+    font-family: "Poppins";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image {
+  filter: grayscale(30%);
+  filter: blur(1px);
+}
+
+.image:hover {
+  filter: grayscale(0%); /* Try this for testing */
+  filter: blur(0px);
+  transform: scale(1.1, 1.1);
+}
