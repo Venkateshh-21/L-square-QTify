@@ -10,9 +10,12 @@ import axios from "axios";
 import { Stack } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import "./Album.css"
+import CarousalTop from "./carousalTopAul";
 
 export default function Albums() {
-  const [TopAlbums, setTopAlbums] = useState([]);
+  const [topAlbums, setTopAlbums] = useState([]);
+  const [toggle,setToggle]= useState(false)
+  console.log(topAlbums)
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get("https://qtify-backend-labs.crio.do/albums/top");
@@ -20,7 +23,10 @@ export default function Albums() {
     };
     fetchData();
   }, []);
-  console.log(TopAlbums);
+  const handleToggle= ()=>{
+    setToggle(!toggle)
+  }
+  
   return (
     <div className="topAlbums">
     
@@ -29,15 +35,15 @@ export default function Albums() {
           Top Albums
         </Typography>
        
-        <Button id="collapse">Collapse</Button>
+        <Button id="collapse" onClick={handleToggle} >{toggle ? "Collapse":"Change View"}</Button>
       </div>
-      <Grid className="grid"
+     {toggle ? <Grid className="grid"
         style={{ paddingLeft: "50px" }}
         container
         rowSpacing={4}
         columnSpacing={{ xs: 1, sm: 2, md: 5, lg: 7,xl:12 }}
       >
-        {TopAlbums.map((a) => {
+        {topAlbums.map((a) => {
           return (
             <>
               <Grid className="gridItem">
@@ -71,6 +77,7 @@ export default function Albums() {
           );
         })}
       </Grid>
+      :<CarousalTop TopAlbums={topAlbums}/>}
     </div>
   );
 }
