@@ -35,7 +35,7 @@ export default function Albums() {
           Top Albums
         </Typography>
        
-        <Button id="collapse" onClick={handleToggle} >{toggle ? "Collapse":"Change View"}</Button>
+        <Button id="collapse" onClick={handleToggle} >{toggle ? "Collapse":"Show All"}</Button>
       </div>
      {toggle ? <Grid className="grid"
         style={{ paddingLeft: "50px" }}

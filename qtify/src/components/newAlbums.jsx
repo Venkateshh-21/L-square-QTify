@@ -34,7 +34,7 @@ export default function NewAlbums() {
           New Albums
         </Typography>
        
-       <Button id="collapse" onClick={handleToggle} >{toggle ? "Collapse":"Change View"}</Button>
+       <Button id="collapse" onClick={handleToggle} >{toggle ? "Collapse":"Show All"}</Button>
       </div>
 
      {toggle ? <Grid className="grid"
