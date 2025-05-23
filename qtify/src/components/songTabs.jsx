@@ -41,16 +41,15 @@ export default function SongsTabs() {
           aria-label="lab API tabs example"
           sx={{
           '.MuiTabs-indicator': {
-            backgroundColor: '#1DB954', // Green for the active tab indicator (like Spotify)
+            backgroundColor: '#34C94B', 
           },
           '.MuiTab-root': {
-            color: '#FFFFFF', // Default text color for inactive tabs
+            color: '#FFFFFF', 
             '&.Mui-selected': {
-              color: '#FFFFFF', // White text color for the selected tab
+              color: '#FFFFFF',
             },
           },
-          // You can also change the background of the entire tab bar if needed
-          // backgroundColor: '#000000', // Black background for the tab container
+          
         }}
         >
           {geners.map((a) => {

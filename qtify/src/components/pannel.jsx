@@ -9,7 +9,6 @@ import Card from "@mui/material/Card";
 import Chip from "@mui/material/Chip";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -36,7 +35,6 @@ export default function Pannel({ value }) {
       {value == "all" ? (
         <TabPanel key={value} value={value}>
           <Swiper
-            // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={50}
             slidesPerView={6}
